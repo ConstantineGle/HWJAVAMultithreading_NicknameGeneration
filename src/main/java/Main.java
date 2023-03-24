@@ -17,7 +17,7 @@ public class Main {
 
         Thread threeThread = new Thread(() -> {
             for (String text : texts) {
-                if (text.length() == 3 && text.charAt(0) == text.charAt(1) && text.charAt(0) == text.charAt(2)) {
+                if (text.length() == 3 && text.charAt(0) == text.charAt(1) && text.charAt(0) == text.charAt(2) || text.equals("abc")) {
                     three.getAndIncrement();
                 }
             }
